@@ -1,0 +1,120 @@
+{
+  "theme_and_archetype": {
+    "domain": "Education/Career/Productivity",
+    "theme": "Light",
+    "archetype": "4 (Swiss & High-Contrast) + Organic Warmth",
+    "rationale": "High-stakes interview prep requires trust and authority. We avoid the typical purple/teal 'AI slop' and instead use a stark, editorial aesthetic (bone white, charcoal, and one sharp signal orange accent) to make the app feel like a premium, trustworthy tool rather than a generic tech demo. The camera and feedback should be the absolute focus, so the UI must fade away."
+  },
+  "colors": {
+    "background": {
+      "page": "#F9F8F6",
+      "surface": "#FFFFFF",
+      "surface_hover": "#F0EFEA",
+      "glass": "rgba(255, 255, 255, 0.7)"
+    },
+    "text": {
+      "primary": "#121212",
+      "secondary": "#6B6B6B",
+      "inverse": "#FFFFFF",
+      "muted": "#A1A1A1"
+    },
+    "accent": {
+      "primary": "#FF4500",
+      "primary_hover": "#E03C00",
+      "primary_bg_subtle": "rgba(255, 69, 0, 0.05)",
+      "success": "#4A5D23",
+      "success_bg_subtle": "rgba(74, 93, 35, 0.08)",
+      "border": "#E2E0D8",
+      "border_focus": "#121212"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cabinet Grotesk, sans-serif",
+      "body": "Figtree, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-medium",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-snug font-medium",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm",
+      "overline": "text-xs tracking-[0.2em] uppercase font-bold"
+    },
+    "rules": [
+      "Headings strictly use Cabinet Grotesk with tight tracking.",
+      "Never use Inter or generic sans for headings.",
+      "Data labels and system statuses should use JetBrains Mono in uppercase.",
+      "Use text-balance for multiline headings."
+    ]
+  },
+  "spacing_and_layout": {
+    "container_padding": "p-8 md:p-12 lg:p-16",
+    "grid_system": "Bento 'Control Room' grid for dashboard and feedback reports. grid-cols-1 md:grid-cols-3 lg:grid-cols-4 with gap-6.",
+    "surface_styles": {
+      "cards": "bg-white border border-[#E2E0D8] rounded-lg shadow-sm hover:shadow-md transition-shadow",
+      "glass_panels": "backdrop-blur-xl bg-white/70 border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.04)] rounded-2xl"
+    },
+    "alignment": "Left-align dense text and data. Center-align only major empty states or specific modal content."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FF4500] text-white hover:bg-[#E03C00] rounded-full px-6 py-3 font-medium transition-colors",
+      "secondary": "bg-white border border-[#E2E0D8] text-[#121212] hover:bg-[#F0EFEA] rounded-full px-6 py-3 font-medium transition-colors",
+      "ghost": "text-[#6B6B6B] hover:text-[#121212] hover:bg-[#F0EFEA] rounded-full px-4 py-2 transition-colors"
+    },
+    "inputs": "bg-transparent border-b-2 border-[#E2E0D8] focus:border-[#121212] rounded-none px-0 py-2 outline-none transition-colors",
+    "recording_ui": {
+      "container": "relative w-full rounded-2xl overflow-hidden border border-[#E2E0D8] bg-black",
+      "video_feed": "w-full h-full object-cover",
+      "controls_overlay": "absolute bottom-6 left-1/2 -translate-x-1/2 backdrop-blur-xl bg-black/40 border border-white/20 rounded-full flex items-center gap-4 p-2 shadow-2xl",
+      "record_button": "w-14 h-14 rounded-full bg-[#FF4500] hover:bg-[#E03C00] flex items-center justify-center transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,69,0,0.4)]",
+      "live_indicator": "absolute top-6 right-6 flex items-center gap-2 backdrop-blur-md bg-black/40 border border-white/20 rounded-full px-3 py-1.5",
+      "live_dot": "w-2.5 h-2.5 rounded-full bg-[#FF4500] animate-pulse"
+    },
+    "badges": "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+    "progress_tracker": "h-1 w-full bg-[#E2E0D8] rounded-full overflow-hidden. Active segment uses bg-[#FF4500]"
+  },
+  "animations": {
+    "hover": "transition-all duration-200 ease-out",
+    "modal_enter": "animate-in fade-in zoom-in-95 duration-300",
+    "transcription_reveal": "animate-in fade-in slide-in-from-bottom-2 duration-500",
+    "rules": [
+      "Keep animations purposeful. Do not overuse bouncy physics.",
+      "UI elements should feel snappy and responsive."
+    ]
+  },
+  "media": {
+    "image_urls": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1658652303124-783639f22f8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpZ2h0JTIwYWVzdGhldGljJTIwdGV4dHVyZXxlbnwwfHx8fDE3NzY4NDI3NTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract light aesthetic texture for subtle background branding."
+      },
+      "avatar_placeholder_1": {
+        "url": "https://images.unsplash.com/photo-1762522927402-f390672558d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMGNsZWFuJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzY4NDI3NTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional headshot for mock session history."
+      },
+      "avatar_placeholder_2": {
+        "url": "https://images.unsplash.com/photo-1762522926157-bcc04bf0b10a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMGNsZWFuJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzY4NDI3NTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Alternative professional headshot."
+      }
+    }
+  },
+  "testing": {
+    "rules": [
+      "All interactive elements must have a data-testid attribute.",
+      "Use kebab-case and role-based naming (e.g., data-testid='start-interview-button', data-testid='camera-preview', data-testid='download-feedback-button')."
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure 'Cabinet Grotesk' is used for headings and 'Figtree' for body text. Load from Google Fonts or Fontshare.",
+    "Do NOT use typical SaaS blue/purple gradients. Stick strictly to the bone white (#F9F8F6) background with pure white cards, and Vermilion Red (#FF4500) for primary actions.",
+    "The camera recording UI should be the centerpiece: simple, no clutter, floating glassmorphic controls at the bottom, and a sharp red recording dot at the top.",
+    "For the real-time question display, use a prominent overlapping card or a clean bottom-third overlay on the video feed so the user doesn't have to look away from the camera.",
+    "Use Lucide-React for crisp, minimal icons.",
+    "Ensure the feedback report page uses a 'Control Room' grid (Bento box style) to display scores, strengths, and weaknesses clearly.",
+    "All components must be fully accessible and include proper ARIA and data-testid attributes."
+  ]
+}
